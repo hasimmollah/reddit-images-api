@@ -1,0 +1,51 @@
+spring:
+  profiles:
+    default: development
+    active: development 
+
+redditBaseUrl: https://www.reddit.com/r/
+finalImageCount: 3   
+logging:
+  file: App.log
+  level:
+    root: INFO
+    com:
+      baeldung: TRACE
+---
+
+spring:
+  profiles: development
+  
+security:
+  basic:
+    enabled: false
+  
+# context Path
+server:
+    port: 9080   
+       
+---
+
+spring:
+  profiles: test
+  
+# context Path
+server:
+    port: 9080
+
+---
+
+spring:
+  profiles: production
+  
+# context Path
+server:
+    port: 9080
+
+---
+# common properties for yaml 
+
+# context Path
+server:
+      contextPath: /reddit-images-api/v1.0
+      
