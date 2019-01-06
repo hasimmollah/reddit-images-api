@@ -277,8 +277,5 @@ public class RedditImagesControllerTest {
     }
    
 
-    @Test
-    public void testT() {
-        new MockServerClient("ses-mock-server.lbg.eu-gb.mybluemix.net", 80).reset();
-    }
+    
 }
